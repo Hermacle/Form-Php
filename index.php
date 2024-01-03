@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
   <title>Formulaire PHP</title>
 </head>
 
-<body>
+<body class="bg-primary-subtle">
   <!-- inclusion de l'entête du site -->
   <?php require_once(__DIR__ . '/Blocks/header.php'); ?>
      
@@ -16,7 +17,7 @@
     <div class="card mb-3 my-5">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="" class="img-fluid rounded-start" alt="Safari">
+          <img src="images/Safari.jpg" class="img-fluid rounded-start h-100" alt="Safari">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -51,7 +52,7 @@
                 <div class="col-12 col-md-6 mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <span class="input-group-text" id="addon-wrapping"><i class="bi bi-envelope-paper"></i></span>
                     <input type="text" id="exampleInputEmail1" class="form-control" name="email" placeholder="Email" aria-label="Email">
                   </div>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
