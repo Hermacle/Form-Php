@@ -9,8 +9,11 @@
 </head>
 
 <body>
+  <!-- inclusion de l'entête du site -->
+  <?php require_once(__DIR__ . '/Blocks/header.php'); ?>
+     
   <div class="container">
-    <div class="card mb-3 my-4">
+    <div class="card mb-3 my-5">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="" class="img-fluid rounded-start" alt="Safari">
