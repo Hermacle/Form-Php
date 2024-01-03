@@ -21,12 +21,12 @@
         <div class="col-md-8">
           <div class="card-body">
             <h3 class="card-title">Formulaire de Soumission</h3>
-            <form>
+            <form method="POST" action="submit.php"  enctype="multipart/form-data">
               
               <div class="row">
                 <div class="col-12 col-md-6 mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name">
+                  <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <div class="col-12 offset-md-1 col-md-5 mb-3">
                   <label class="form-label">Genre</label>
@@ -52,21 +52,21 @@
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <div class="input-group flex-nowrap">
                     <span class="input-group-text" id="addon-wrapping">@</span>
-                    <input type="text" id="exampleInputEmail1" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+                    <input type="text" id="exampleInputEmail1" class="form-control" name="email" placeholder="Email" aria-label="Email">
                   </div>
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="col-12 col-md-6 mb-3">
                   <label class="form-label">Photo</label>
                   <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="file">
+                    <input type="file" class="form-control" id="file" name="imageClient">
                   </div>
                 </div>
               </div>
               
               <div class="mb-3">
                 <div class="form-floating">
-                  <textarea class="form-control"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <textarea class="form-control" name="message"  placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                   <label for="floatingTextarea">Message</label>
                 </div>
               </div>
