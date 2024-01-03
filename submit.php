@@ -86,7 +86,7 @@
       </p>
       
       <?php if ($isFileLoaded): ?>
-        <div class="alert alert-sucess" role="alert">
+        <div class="alert alert-success" role="alert">
           L'envoi a bien été effectué !
         </div>
       <?php endif ?>
